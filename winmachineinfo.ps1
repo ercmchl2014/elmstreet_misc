@@ -1,0 +1,1 @@
+﻿Get-WmiObject -Class win32_bios | Select-Object -Property SMBIOSBIOSVersion,Manufacturer,Name,SerialNumber,Version | Export-Csv -Path Z:\machineinfo.csv -Append -NoTypeInformation

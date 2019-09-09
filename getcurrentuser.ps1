@@ -1,0 +1,1 @@
+﻿$currentuser = (Get-WmiObject -Class Win32_Process -Filter 'Name="explorer.exe"').GetOwner().User
