@@ -14,7 +14,7 @@ then
     modelplistinfo="$(defaults read "${ATTRIBSFILE}" "${modelid}" |sed -n -e 's/\\//g' -e 's/.*marketingModel = "\(.*\)";/\1/p')"
     marketingModel="$(echo "$modelplistinfo" | awk '{print $(NF-1),$NF}')"
     echo $modelplistinfo
-    echo "${marketingModel}"
+    echo $marketingModel
 else
     echo "can't use offline method to find marketing name on this OS version"
 fi
