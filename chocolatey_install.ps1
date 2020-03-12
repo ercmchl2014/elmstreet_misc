@@ -3,4 +3,4 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 choco install -y adobereader -params '"/EnableUpdateService /UpdateMode:4"'
 
-choco install -y googlechrome firefox slack zoom google-drive-file-stream teamviewer.host
+choco install -y googlechrome firefox slack zoom googledrive teamviewer.host
